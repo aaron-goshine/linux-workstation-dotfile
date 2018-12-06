@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/aarongoshine/.dotfiles'
+let g:netrw_dirhist_2='/Users/aarongoshine/workspace/three-sixtyfive-days-of-rain'
+let g:netrw_dirhist_3='/Users/aarongoshine/workspace/three-sixtyfive-days-of-rain/routes'
+let g:netrw_dirhist_4='/Users/aarongoshine/workspace/three-sixtyfive-days-of-rain/routes/api'

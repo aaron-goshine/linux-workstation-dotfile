@@ -1,20 +1,18 @@
 ## Welcome to the Ultra dot files and configurations
 
 ### What you get out of the box.
-- Bash and ipython configurations
 - Tons of helper scripts and functions for bash
-- Tons of optional plugin for some of the most use tools: git,
-   node, npm, homebrew, the list is too numerous to mention...
+- Tons must have unix command line tools
 - Ultra configuration for vim
 
 ### Installation
 ```
 cd ~/
-git clone git@github.com:aaron-goshine/dotfiles.git ~/.dotfiles
+git clone git@github.com:aaron-goshine/linux-workstation-dotfile.git ~/.dotfiles
 cd ~/.dotfiles/
 ```
 ```
-./install-ultra.sh
+./bin/install-ultra.sh
 ```
 the installation step might take some time.
 At the end of the installation script you will be prompted

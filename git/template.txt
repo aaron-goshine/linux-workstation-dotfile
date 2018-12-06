@@ -1,0 +1,22 @@
+type_of_commits(x): description 
+
+# Example
+
+#feat: add hat wobble
+#^--^  ^------------^
+#|     |
+#|     +-> Summary in present tense.
+#|
+#+-------> Type: chore, docs, feat, fix, refactor, style, or test.
+
+#+++++++++++++++++++++++++++++++++++++++++
+# TYPE OF COMMITS WITH BASIC DESCRIPTION
+#+++++++++++++++++++++++++++++++++++++++++
+# chore - changes for does maintenance work
+# docs -  writing or updating existing documentations
+# feat - implementing new feature or modifying existing feature
+# fix - bug fix and debugging
+# patch - apply patches, re-bases or fixing merge conflicts
+# refactor - a commit that does not modifying the behaviour or the application
+# style  - modifications to code style
+# test - change related to test or adding new test
