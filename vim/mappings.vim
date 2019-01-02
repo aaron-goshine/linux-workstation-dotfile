@@ -186,11 +186,7 @@ nnoremap <silent> <m-w> :close<CR>
 
 " Toggle paste mode with F5
 nnoremap <silent> <F5> :set paste!<CR>
-" Copy and paste
-vmap <C-c> "+yi
-vmap <C-x> "+c
-vmap <C-v> c<ESC>"+p
-imap <C-v> <ESC>"+pa
+
 " Insert date
 iabbrev ddate <C-R>=strftime("%Y-%m-%d")<CR>
 
@@ -201,12 +197,31 @@ iabbrev clda console.debug(arguments
 " Insert a jsdoc block
 iabbrev jxx /** \r* \r* */
 
+" copy current file name (relative/absolute) to system clipboard
+
+if has("mac") || has("gui_macvim") || has("gui_mac")
+
+  " relative path  (src/foo.txt)
+  nnoremap <silent> <leader>yp :let @*=expand("%")<CR>
+
+  " absolute path  (/something/src/foo.txt)
+  nnoremap <silent> <leader>yP :let @*=expand("%:p")<CR>
+
+  " filename       (foo.txt)
+  nnoremap <silent> <leader>yf :let @*=expand("%:t")<CR>
+
+  " directory name (/something/src)
+  nnoremap <silent> <leader>yd :let @*=expand("%:p:h")<CR>
+endif
+
 inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+
 
 vnoremap <silent> < <gv
 vnoremap <silent> > >gv
 nnoremap <silent> n nzzzv
 nnoremap <silent> N Nzzzv
+
 
 nmap <silent> --s "=HaskellModuleSection()<CR>gp
 nmap <silent> --h "=HaskellModuleHeader()<CR>:0put =<CR>
