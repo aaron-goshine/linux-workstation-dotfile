@@ -22,7 +22,7 @@ echo "$t1"
 function slimlinker() {
   local BNAME="$HOME/.$(basename $1)"
   rm -rf $BNAME 2> /dev/null
-  ln -s $1 $BNAME
+  ln -sf $1 $BNAME
 }
 
 slimlinker $DOTDIR/bin/
@@ -122,7 +122,6 @@ select opt in $OPTIONS; do
 
 
 fc-cache -f
-
 exit
 done
 unset DOTDIR

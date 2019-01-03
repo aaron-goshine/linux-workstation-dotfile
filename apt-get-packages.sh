@@ -96,6 +96,5 @@ sudo apt install -y watchman
 sudo apt install -y wget
 sudo apt install -y z
 sudo apt install -y mericurial
-sudo apt-get build-dep vim
-sudo apt-get install -y mercurial
-sudo apt install vim-gtk3
+sudo apt install -y mercurial
+sudo apt install -y vim-gtk3

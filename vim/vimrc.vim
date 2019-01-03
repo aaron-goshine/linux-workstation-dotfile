@@ -5,13 +5,11 @@
 " Inheritance: This vimrc is base on (dot_vim) with serious weight loss
 " =============================================================================
 
-" All of the plugins are installed with Vundle from this file.
 " Small custom functions.
 source ~/.vim/functions.vim
 
 source ~/.vim/packages.vim
 
-" Automatically detect file types. (must turn on after Vundle)
 filetype plugin indent on
 
 " Platform (Windows, Mac, etc.) configuration.
