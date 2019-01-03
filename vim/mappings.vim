@@ -45,7 +45,6 @@ nnoremap <silent> gk :WriteBufferIfNecessary<CR>:wincmd k<CR>
 nnoremap <silent> <M-k> :wincmd k<CR>
 nnoremap <silent> gl :WriteBufferIfNecessary<CR>:wincmd l<CR>
 nnoremap <silent> <M-l> :wincmd l<CR>
-
 "   4 Window Splits
 "
 "   -----------------
@@ -171,7 +170,9 @@ nnoremap <silent> <leader>uul :t.\|s/./=/\|:nohls<cr>
 "          # --------
 "          # Test 123
 "          # --------
+
 nnoremap <silent> <leader>cul :normal "lyy"lpwvLr-^"lyyk"lP<cr>
+
 
 " Format the entire file
 nnoremap <leader>fef mx=ggG='x
@@ -196,23 +197,6 @@ iabbrev cld console.debug
 iabbrev clda console.debug(arguments
 " Insert a jsdoc block
 iabbrev jxx /** \r* \r* */
-
-" copy current file name (relative/absolute) to system clipboard
-
-if has("mac") || has("gui_macvim") || has("gui_mac")
-
-  " relative path  (src/foo.txt)
-  nnoremap <silent> <leader>yp :let @*=expand("%")<CR>
-
-  " absolute path  (/something/src/foo.txt)
-  nnoremap <silent> <leader>yP :let @*=expand("%:p")<CR>
-
-  " filename       (foo.txt)
-  nnoremap <silent> <leader>yf :let @*=expand("%:t")<CR>
-
-  " directory name (/something/src)
-  nnoremap <silent> <leader>yd :let @*=expand("%:p:h")<CR>
-endif
 
 inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 

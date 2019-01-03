@@ -1,102 +1,101 @@
-sudo apt install sqlite
-sudo apt install ansible
-sudo apt install aspcud
-sudo apt install fontconfig
-sudo apt install gettext
-sudo apt install pkg-config
-sudo apt install gobject-introspection
-sudo apt install autoconf
-sudo apt install automake
-sudo apt install xz
-sudo apt install python3
-sudo apt install awscli
-sudo apt install ghc
-sudo apt install cabal-install
-sudo apt install gmp
-sudo apt install cmake
-sudo apt install cppunit
-sudo apt install dialog
-sudo apt install direnv
-sudo apt install dirmngr
-sudo apt install exercism
-sudo apt install fasd
-sudo apt install flow
-sudo apt install fortune
-sudo apt install fzf
-sudo apt install gcc
-sudo apt install jpeg
-sudo apt install git
-sudo apt install icu4c
-sudo apt install lua@5.1
-sudo apt install lua
-sudo apt install gnu-getopt
-sudo apt install gnu-typist
-sudo apt install gnutls
-sudo apt install pinentry
-sudo apt install gnupg, link: false
-sudo apt install gnuplot
-sudo apt install go
-sudo apt install gpg-agent
-sudo apt install gradle
-sudo apt install grc
-sudo apt install haskell-stack
-sudo apt install hh
-sudo apt install highlight
-sudo apt install htop
-sudo apt install httpie
-sudo apt install hub
-sudo apt install iftop
-sudo apt install jemalloc
-sudo apt install jq
-sudo apt install jrnl
-sudo apt install node
-sudo apt install jsdoc3
-sudo apt install luajit
-sudo apt install lynx
-sudo apt install maven
-sudo apt install mhash
-sudo apt install mcrypt
-sudo apt install mongodb
-sudo apt install mycli
-sudo apt install mysql, restart_service: true
-sudo apt install ncurses
-sudo apt install neovim
-sudo apt install ngrep
-sudo apt install nmap
-sudo apt install numpy, link: false
-sudo apt install nvm
-sudo apt install tree
-sudo apt install pass
-sudo apt install pcre2
-sudo apt install perl
-sudo apt install pgcli
-sudo apt install ponysay
-sudo apt install postgresql, restart_service: true
-sudo apt install postgresql
-sudo apt install r
-sudo apt install ranger
-sudo apt install reattach-to-user-namespace
-sudo apt install sbcl
-sudo apt install sox
-sudo apt install ssh-copy-id
-sudo apt install task
-sudo apt install tcptraceroute
-sudo apt install the_silver_searcher
-sudo apt install tig
-sudo apt install tmux
-sudo apt install typespeed
-sudo apt install unar
-sudo apt install unixodbc
-sudo apt install utf8proc
-sudo apt install w3m
-sudo apt install watch
-sudo apt install watchman
-sudo apt install wget
-sudo apt install z
-sudo apt install mericurial
+sudo apt install -y sqlite
+sudo apt install -y ansible
+sudo apt install -y aspcud
+sudo apt install -y fontconfig
+sudo apt install -y gettext
+sudo apt install -y pkg-config
+sudo apt install -y gobject-introspection
+sudo apt install -y autoconf
+sudo apt install -y automake
+sudo apt install -y xz
+sudo apt install -y python3
+sudo apt install -y python3-pip
+sudo apt install -y python-pip
+sudo apt install -y awscli
+sudo apt install -y ghc
+sudo apt install -y cabal-install
+sudo apt install -y gmp
+sudo apt install -y cmake
+sudo apt install -y cppunit
+sudo apt install -y dialog
+sudo apt install -y direnv
+sudo apt install -y dirmngr
+sudo apt install -y exercism
+sudo apt install -y fasd
+sudo apt install -y flow
+sudo apt install -y fortune
+sudo apt install -y fzf
+sudo apt install -y gcc
+sudo apt install -y jpeg
+sudo apt install -y git
+sudo apt install -y icu4c
+sudo apt install -y lua@5.1
+sudo apt install -y lua
+sudo apt install -y gnu-getopt
+sudo apt install -y gnu-typist
+sudo apt install -y gnutls
+sudo apt install -y pinentry
+sudo apt install -y gnupg, link: false
+sudo apt install -y gnuplot
+sudo apt install -y go
+sudo apt install -y gpg-agent
+sudo apt install -y gradle
+sudo apt install -y grc
+sudo apt install -y haskell-stack
+sudo apt install -y hh
+sudo apt install -y highlight
+sudo apt install -y htop
+sudo apt install -y httpie
+sudo apt install -y hub
+sudo apt install -y iftop
+sudo apt install -y jemalloc
+sudo apt install -y jq
+sudo apt install -y jrnl
+sudo apt install -y node
+sudo apt install -y jsdoc3
+sudo apt install -y luajit
+sudo apt install -y lynx
+sudo apt install -y maven
+sudo apt install -y mhash
+sudo apt install -y mcrypt
+sudo apt install -y mongodb
+sudo apt install -y mycli
+sudo apt install -y mysql, restart_service: true
+sudo apt install -y ncurses
+sudo apt install -y neovim
+sudo apt install -y ngrep
+sudo apt install -y nmap
+sudo apt install -y numpy, link: false
+sudo apt install -y nvm
+sudo apt install -y tree
+sudo apt install -y pass
+sudo apt install -y pcre2
+sudo apt install -y perl
+sudo apt install -y pgcli
+sudo apt install -y ponysay
+sudo apt install -y postgresql, restart_service: true
+sudo apt install -y postgresql
+sudo apt install -y r
+sudo apt install -y ranger
+sudo apt install -y reattach-to-user-namespace
+sudo apt install -y sbcl
+sudo apt install -y sox
+sudo apt install -y ssh-copy-id
+sudo apt install -y task
+sudo apt install -y tcptraceroute
+sudo apt install -y the_silver_searcher
+sudo apt install -y tig
+sudo apt install -y tmux
+sudo apt install -y typespeed
+sudo apt install -y unar
+sudo apt install -y unixodbc
+sudo apt install -y utf8proc
+sudo apt install -y w3m
+sudo apt install -y watch
+sudo apt install -y watchman
+sudo apt install -y wget
+sudo apt install -y z
+sudo apt install -y mericurial
 sudo apt-get build-dep vim
-sudo apt-get install mercurial
-sudo add-apt-repository ppa:jonathonf/vim
-sudo apt update
-sudo apt install vim
-
+sudo apt-get install -y mercurial
+sudo apt install vim-gtk3

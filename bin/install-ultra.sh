@@ -29,6 +29,7 @@ slimlinker $DOTDIR/bin/
 slimlinker $DOTDIR/vim/
 slimlinker $DOTDIR/ipython/
 slimlinker $DOTDIR/git/gitconfig
+slimlinker $DOTDIR/font/
 
 for FILE in $(ls $DOTDIR/xrc/); 
 do
@@ -37,27 +38,27 @@ done;
 success "done"
 
 #==========================================================
-t1=$(get_ultra_rule_str ' Installing homebrew packages ' 0 0)
+t1=$(get_ultra_rule_str ' Installing global packages ' 0 0)
 echo "$t1"
 cd $DOTDIR
 source ./apt-get-packages.sh
-success "done"
 
-#==========================================================
-t1=$(get_ultra_rule_str ' Installing global npm packages ' 0 0)
+# python =====================
+pip install psutil
 
-npm install -g babel-eslint
-npm install -g eslint
-npm install -g eslint-plugin-react
-npm install -g jshint
-npm install -g mocha 
-npm install -g nodeunit 
-npm install -g pm2 
-npm install -g stylelint
-npm install -g stylelint-config-recommended
-npm install -g stylelint-config-styled-components
-npm install -g stylelint-processor-styled-components
-npm install -g tern
+# npm    =====================
+sudo npm install -g babel-eslint
+sudo npm install -g eslint
+sudo npm install -g eslint-plugin-react
+sudo npm install -g jshint
+sudo npm install -g mocha 
+sudo npm install -g nodeunit 
+sudo npm install -g pm2 
+sudo npm install -g stylelint
+sudo npm install -g stylelint-config-recommended
+sudo npm install -g stylelint-config-styled-components
+sudo npm install -g stylelint-processor-styled-components
+sudo npm install -g tern
 
 success "done"
 
@@ -108,14 +109,20 @@ echo "$t1"
 OPTIONS="KEEP_BSH_PROFILE REPLACE"
 select opt in $OPTIONS; do
   if [ "$REPLY" = "1" ]; then
-    t1=$(get_ultra_rule_str ' Keeping bash_profile but injecting source ' 0 0)
+    t1=$(get_ultra_rule_str ' Keeping bashrc but injecting source ' 0 0)
     echo "$t1"
+    cat $DOTDIR/bash/bash_profile >> ~/.bashrc
     cat $DOTDIR/bash/bash_profile >> ~/.bash_profile
   elif [ "$REPLY" = "2" ]; then
-    t1=$(get_ultra_rule_str ' replace bash_profile ' 0 0)
+    t1=$(get_ultra_rule_str ' replace bashrc ' 0 0)
     echo "$t1"
-    slimlinker $DOTDIR/bash/bash_profile
+    ln -s -f $DOTDIR/bash/bash_profile ~/.bashrc
+    ln -s -f $DOTDIR/bash/bash_profile ~/.bash_profile
   fi
+
+
+fc-cache -f
+
 exit
 done
 unset DOTDIR
