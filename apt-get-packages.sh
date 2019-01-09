@@ -98,3 +98,4 @@ sudo apt install -y z
 sudo apt install -y mericurial
 sudo apt install -y mercurial
 sudo apt install -y vim-gtk3
+sudo apt install -y gnome-shell-pomodoro
