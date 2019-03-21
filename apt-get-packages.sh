@@ -51,7 +51,7 @@ sudo apt install -y iftop
 sudo apt install -y jemalloc
 sudo apt install -y jq
 sudo apt install -y jrnl
-sudo apt install -y node
+sudo apt install -y nodejs
 sudo apt install -y jsdoc3
 sudo apt install -y luajit
 sudo apt install -y lynx
@@ -83,7 +83,7 @@ sudo apt install -y sox
 sudo apt install -y ssh-copy-id
 sudo apt install -y task
 sudo apt install -y tcptraceroute
-sudo apt install -y the_silver_searcher
+sudo apt install -y silversearcher-ag
 sudo apt install -y tig
 sudo apt install -y tmux
 sudo apt install -y typespeed
