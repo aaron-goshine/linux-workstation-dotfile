@@ -193,10 +193,18 @@ iabbrev ddate <C-R>=strftime("%Y-%m-%d")<CR>
 
 " Insert a console statements
 iabbrev clg console.log
-iabbrev cld console.debug
-iabbrev clda console.debug(arguments
+
+iabbrev cld /** TODO: clean up before deploy */
+\<CR> console.log('====>');
+\<CR> console.log(value);
+\<CR> console.log('====x');
+
 " Insert a jsdoc block
-iabbrev jxx /** \r* \r* */
+iabbrev jdx
+\<CR> /**
+\<CR> *
+\<CR> *
+\<CR> */
 
 inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 
