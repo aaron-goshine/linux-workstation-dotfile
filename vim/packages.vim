@@ -13,6 +13,7 @@ command! PackClean call minpac#clean()
 
 "=========================================
 call minpac#add('Valloric/YouCompleteMe')
+
 " Plugin 'Valloric/YouCompleteMe'
 let g:ycm_complete_in_comments = 1
 let g:ycm_seed_identifiers_with_syntax = 1
@@ -41,6 +42,7 @@ call minpac#add('w0rp/ale')
 let g:ale_sign_error = '✖'
 let g:ale_sign_warning = '⚠'
 let g:ale_lint_on_enter = 0
+let g:ale_echo_cursor = 0
 
 if $LINTFIX == 'true'
   let g:ale_fixers = {
