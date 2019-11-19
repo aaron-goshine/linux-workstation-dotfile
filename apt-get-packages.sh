@@ -99,3 +99,7 @@ sudo apt install -y mericurial
 sudo apt install -y mercurial
 sudo apt install -y vim-gtk3
 sudo apt install -y gnome-shell-pomodoro
+sudo apt install -y python3-pip
+pip3 install --upgrade pip
+sudo -H pip3 install awscli --upgrade --user 
+
