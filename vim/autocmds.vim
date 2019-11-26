@@ -53,6 +53,9 @@ autocmd FileType javascript set listchars=tab:\|\
 autocmd FileType css set listchars=tab:\|\
 autocmd FileType html set listchars=tab:\|\
 autocmd FileType python set listchars=tab:\|\
+autocmd FileType yml set spell!
+autocmd FileType yaml set spell!
+autocmd FileType json set spell!
 
 autocmd! FileType * call SetDictionary()
 autocmd! BufNewFile * call LoadTemplate()
